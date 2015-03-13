@@ -2,6 +2,7 @@
 I followed this guide.
 http://thomaslevine.com/!/web-sites-to-data-tables-in-depth/
 '''
+import os, sys
 import datetime, argparse
 from collections import OrderedDict
 
@@ -42,10 +43,12 @@ def upload(metadata, data, header = ['Date', 'Killed', 'Injured']):
     for month, killed, injured in data:
         date = datetime.datetime.strptime('1 %s' % month, '%d %B %Y').strftime('%Y/%m')
         data_sheet.insert(OrderedDict(zip(header, (month, killed, injured))))
+        print('Data for %s has been written.' % month)
 
     metadata_sheet = s.create_sheet('Metadata')
     metadata_sheet.title = 'Metadata'
     metadata_sheet.insert(metadata)
+    print('Metadata has been written.')
 
     return 'https://docs.google.com/spreadsheets/d/' + s.id
 
@@ -60,11 +63,13 @@ You must also turn on support for less-secure apps.
 https://www.google.com/settings/security/lesssecureapps
 '''
 def main():
-    import os, sys
     if not {'GOOGLE_USER', 'GOOGLE_PASSWORD'}.issubset(os.environ.keys()):
         sys.stderr.write(var_note)
         sys.exit(1)
     sys.stdout.write('Result is at %s.\n' % upload(*download()))
 
 if __name__ == '__main__':
-    main()
+    try:
+        main()
+    except ImportError:
+        sys.stderr.write('Install requirements from requirements.txt\n.')
