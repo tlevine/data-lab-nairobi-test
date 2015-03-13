@@ -41,7 +41,8 @@ def upload(metadata, data, header = ['Date', 'Killed', 'Injured']):
     data_sheet = s.sheets[0]
     data_sheet.title = 'Data'
     for month, killed, injured in data:
-        date = datetime.datetime.strptime('1 %s' % month, '%d %B %Y').strftime('%Y/%m')
+        date = datetime.datetime.strptime('1 %s' % month, '%d %B %Y')
+        formatted_date = date.strftime('\'%Y/%m')
         data_sheet.insert(OrderedDict(zip(header, (month, killed, injured))))
         print('Data for %s has been written.' % month)
 
