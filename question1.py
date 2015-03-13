@@ -1,3 +1,4 @@
+#!/usr/bin/env python2
 '''
 I followed this guide.
 http://thomaslevine.com/!/web-sites-to-data-tables-in-depth/
