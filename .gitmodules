@@ -1,0 +1,3 @@
+[submodule "HDX-Data-Scientist-Test"]
+	path = HDX-Data-Scientist-Test
+	url = git@github.com:tlevine/HDX-Data-Scientist-Test
