@@ -58,8 +58,8 @@ var_note = '''
 You must set the "GOOGLE_USER" and "GOOGLE_PASSWORD" environment variables.
 For example,
 
-$ export GOOGLE_USER = thomas.levine@gmail.com
-$ export GOOGLE_PASSWORD = 0h23.uhrlcoe09u23b,rec,.e8hu23gde,..rhuoaruh2,rh.
+$ export GOOGLE_USER=thomas.levine@gmail.com
+$ export GOOGLE_PASSWORD=0h23.uhrlcoe09u23b,rec,.e8hu23gde,..rhuoaruh2,rh.
 
 You must also turn on support for less-secure apps.
 https://www.google.com/settings/security/lesssecureapps
