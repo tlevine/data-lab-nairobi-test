@@ -1,0 +1,14 @@
+Question 1. Using Python, scrape data from the UN Iraq website
+----------------------------------------------------------------
+Run the scraper like so.
+
+    pip install -r requirements.txt
+    ./question1.py
+
+The URL of the Google spreadsheet will be printed to the terminal.
+It will have one sheet for the data and one for the metadata.
+It takes a while to upload, so the months are logged as well. 
+
+Question 2. Correct Source Errors
+----------------------------------------------------------------
+The fixed code is in the directory "question2".
