@@ -13,9 +13,9 @@ methodology, date of dataset, location, caveats and comments.
 I followed this guide.
 http://thomaslevine.com/!/web-sites-to-data-tables-in-depth/
 '''
-import datetime
+import datetime, argparse
 
-import requests, lxml.html
+import requests, lxml.html, gdata
 
 url = 'http://www.uniraq.org/index.php?option=com_k2&view=item&id=3344:un-casualty-figures-for-february-2015&Itemid=633&lang=en'
 
@@ -34,6 +34,17 @@ def format_table(body, header = ['Date', 'Killed', 'Injured']):
     for month, killed, injured in body:
         date = datetime.datetime.strptime('1 %s' % month, '%d %B %Y').strftime('%Y/%m')
         yield date, killed, injured
+
+desc = '''
+Extract data from the UN Iraq website
+http://www.uniraq.org/index.php?option=com_k2&view=item&id=3344:un-casualty-figures-for-february-2015&Itemid=633&lang=en
+
+Create a table in a google spreadsheet that contains the casualty figures from November 2012 on.
+The resulting dataset will also contain the following metadata fields: source, 
+methodology, date of dataset, location, caveats and comments.
+'''
+p = argparse.ArgumentParser(description = desc)
+p.add_argument(
 
 def main():
     list(format_table(download()))
