@@ -1,19 +1,8 @@
-Test for Data Scientist - Data Lab Nairobi
-Time​
-: 2.5 hours
-Directions​
-: Complete all questions within 2.5 hours and return your answers to
-slezak@un.org​
-with a copy to ​
-teran1@un.org​
-and ​
-hdx@un.org​
-.
+## Question 1. Using Python, scrape data from the UN Iraq website
+A. You are requested to extract data from the
+`UN Iraq website <http://www.uniraq.org/index.php?option=com_k2&view=item&id=3344:un-casualty-figures-for-february-2015&Itemid=633&lang=en>_`.
 
-Question 1. Using Python, scrape data from the UN Iraq website
-A. You are requested to extract data from the ​
-UN Iraq website​
-. Please create a table in a 
+Please create a table in a 
 google spreadsheet that contains the casualty figures from November 2012 to 
 February 2015. Your extraction should be done programmatically (coded) to respond 
 to updates of the website (ie, it should be robust enough to react to changes of the 
