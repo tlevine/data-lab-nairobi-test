@@ -1,4 +1,5 @@
-## Question 1. Using Python, scrape data from the UN Iraq website
+Question 1. Using Python, scrape data from the UN Iraq website
+----------------------------------------------------------------
 A. You are requested to extract data from the
 `UN Iraq website <http://www.uniraq.org/index.php?option=com_k2&view=item&id=3344:un-casualty-figures-for-february-2015&Itemid=633&lang=en>_`.
 
@@ -35,7 +36,7 @@ C. Submit your entire code or publish it on Github 
  
 
 Question 2. Correct Source Errors
- 
+----------------------------------------------------------------
 This `repository <https://github.com/mzslezak/HDX-Data-Scientist-Test>`_
 contains a broken script that needs to be fixed. The script contains 3 errors: 
 1. The function fails to run. 
