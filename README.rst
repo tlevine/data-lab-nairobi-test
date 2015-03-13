@@ -36,16 +36,12 @@ C. Submit your entire code or publish it on Github 
 
 Question 2. Correct Source Errors
  
-This ​
-repository​
- ​
+This `repository <https://github.com/mzslezak/HDX-Data-Scientist-Test>`_
 contains a broken script that needs to be fixed. The script contains 3 errors: 
 1. The function fails to run. 
 2. The columns of the CSV output are improperly organized. 
 3. Some records fail to be written in the output CSV file. 
 Please identify the source of the three errors above and fix them, making sure that the script 
-runs successfully and that the output CSV file is correct. ​
+runs successfully and that the output CSV file is correct.
 Submit the fixed code or publish it on 
 Github. 
-
-
